@@ -7,8 +7,9 @@
 ---
 
 ### 🚀 GitHub Stats
-![GitHub Stats](https://github-readme-stats-qwenzy.vercel.app/api?username=Drakaniia&show_icons=true&count_private=true&include_all_commits=true)
-![Top Langs](https://github-readme-stats-qwenzy.vercel.app/api/top-langs/?username=Drakaniia&layout=compact&count_private=true)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Drakaniia&layout=compact)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Drakaniia&show_icons=true&theme=transparent)
 
 ---
 
@@ -22,10 +23,7 @@
 ---
 
 ### 🐾 About Me
-- 💻 Passionate about **Java and Python projects**
-- 🌱 Currently exploring **OOP & game development**
-- 🧠 Always learning and refactoring code
-- 🐈 Loves cats and building interactive games
+- 💻 Passionate about ** mm**
 
 ---
 
