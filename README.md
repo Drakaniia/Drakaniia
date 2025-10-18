@@ -8,10 +8,14 @@
 
 ### 🚀 GitHub Stats
 
+<div align="center">
+
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Drakaniia&layout=compact)
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Drakaniia&show_icons=true&theme=transparent)
 
 ---
+</div>
+
 
 ### 🧰 Technologies & Tools
 ![Java](https://img.shields.io/badge/Code-Java-orange?logo=coffeescript&logoColor=white)
