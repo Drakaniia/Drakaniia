@@ -128,8 +128,6 @@ Other        1 hr 10 mins    █░░░░░░░░░░░░░░░░
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Drakaniia/Drakaniia/output/github-contribution-grid-snake.svg">
 </picture>
 
-> **Note:** To enable the snake animation, you need to set up the [Contribution Snake GitHub Action](https://github.com/Platane/snk) in your profile repository.
-
 </div>
 
 ---
