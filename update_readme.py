@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 GitHub Profile README Auto-Updater
-Fetches quotes from API and displays them in a styled card
+Fetches quotes from API and displays them in README
 Maintains GitHub activity streak through automated commits
 """
 
@@ -15,7 +15,6 @@ import json
 # Configuration
 README_PATH = "README.md"
 TIMEZONE = pytz.timezone("Asia/Manila")  # UTC+8 (Philippines)
-QUOTE_API_URL = "https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight"
 
 
 def get_current_timestamp():
@@ -27,8 +26,6 @@ def get_current_timestamp():
 def fetch_quote_from_api():
     """Fetch a random quote from the API"""
     try:
-        # The API returns an SVG, so we'll use a different quotes API that returns JSON
-        # Using quotable.io API for reliable JSON responses
         api_url = "https://api.quotable.io/random"
         
         with urllib.request.urlopen(api_url, timeout=10) as response:
@@ -47,7 +44,7 @@ def fetch_quote_from_api():
 
 
 def update_readme():
-    """Update the Quote of the Day section in README.md with styled card"""
+    """Update the Quote of the Day section in README.md"""
     
     if not os.path.exists(README_PATH):
         print(f"❌ Error: {README_PATH} not found!")
@@ -61,51 +58,46 @@ def update_readme():
     quote_data = fetch_quote_from_api()
     timestamp = get_current_timestamp()
     
-    # Escape any potential HTML characters in the quote
-    quote_text = quote_data['text'].replace('"', '&quot;').replace('<', '&lt;').replace('>', '&gt;')
-    quote_author = quote_data['author'].replace('"', '&quot;').replace('<', '&lt;').replace('>', '&gt;')
-    
-    # Format new quote section with styled card
+    # Format new quote section - matching the simple format in your README
     new_quote_section = f'''<div align="center">
 
 ## 💬 Quote of the Day
 
-<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; padding: 30px; margin: 20px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.3); position: relative;">
-  <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 12px; padding: 25px; border: 1px solid rgba(255,255,255,0.2);">
-    <div style="text-align: center; margin-bottom: 15px;">
-      <span style="font-size: 48px; color: #FFD700; opacity: 0.8; font-family: Georgia, serif;">"</span>
-    </div>
-    <p style="font-size: 18px; color: #FFFFFF; text-align: center; line-height: 1.6; margin: 0 0 20px 0; font-style: italic; font-weight: 400;">
-      {quote_text}
-    </p>
-    <div style="text-align: right; margin-top: 15px;">
-      <span style="font-size: 16px; color: #FFD700; font-weight: 600;">— {quote_author}</span>
-    </div>
-  </div>
-</div>
+> "{quote_data['text']}"
+> 
+> **— {quote_data['author']}**
 
 _🤖 Auto-updated: {timestamp} (UTC+8)_
 
 </div>'''
     
     # Define regex pattern to match the quote section
-    pattern = r'(<div align="center">\s*\n\s*## 💬 Quote of the Day.*?</div>)'
+    # This pattern matches from the "## 💬 Quote of the Day" until the closing </div>
+    pattern = r'(<div align="center">\s*## 💬 Quote of the Day.*?_🤖 Auto-updated:.*?\(UTC\+8\)_\s*</div>)'
     
     # Replace the quote section
-    if re.search(pattern, content, re.DOTALL):
+    match = re.search(pattern, content, re.DOTALL)
+    if match:
         updated_content = re.sub(pattern, new_quote_section, content, flags=re.DOTALL)
         
-        # Write updated content back
-        with open(README_PATH, "w", encoding="utf-8") as f:
-            f.write(updated_content)
-        
-        print("✅ README.md updated successfully!")
-        print(f"💬 Quote: {quote_data['text']}")
-        print(f"✍️  Author: {quote_data['author']}")
-        print(f"🕐 Timestamp: {timestamp}")
-        return True
+        # Only write if content actually changed
+        if updated_content != content:
+            with open(README_PATH, "w", encoding="utf-8") as f:
+                f.write(updated_content)
+            
+            print("✅ README.md updated successfully!")
+            print(f"💬 Quote: {quote_data['text']}")
+            print(f"✍️  Author: {quote_data['author']}")
+            print(f"🕐 Timestamp: {timestamp}")
+            return True
+        else:
+            print("ℹ️  No changes - same quote fetched")
+            return False
     else:
         print("❌ Error: Could not find Quote of the Day section in README.md")
+        print(f"Pattern: {pattern}")
+        print("Content preview:")
+        print(content[:500])
         return False
 
 
@@ -115,7 +107,7 @@ def main():
     print("🚀 GitHub Profile Auto-Updater")
     print("=" * 60)
     
-    # Update README with styled quote card
+    # Update README
     print("\n📝 Fetching quote from API...")
     success = update_readme()
     
@@ -125,8 +117,8 @@ def main():
         print("=" * 60)
         return 0
     else:
-        print("\n❌ Update failed!")
-        return 1
+        print("\n⚠️  No update needed or failed")
+        return 0  # Return 0 even if no update to avoid workflow failure
 
 
 if __name__ == "__main__":

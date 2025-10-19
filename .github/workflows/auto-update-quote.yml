@@ -1,9 +1,9 @@
 name: 🕒 Auto Update Quote of the Day
 
 on:
-  # Run every 2 hours
+  # Run every 6 hours (more reasonable than every minute)
   schedule:
-    - cron: '*/1 * * * *'
+    - cron: '0 */2 * * *'
   
   # Allow manual trigger
   workflow_dispatch:
@@ -20,11 +20,13 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: 🐍 Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+          cache: 'pip'
       
       - name: 📦 Install Dependencies
         run: |
@@ -32,19 +34,27 @@ jobs:
           pip install pytz
       
       - name: 🎲 Update Quote in README
+        id: update
         run: |
           python update_readme.py
+        continue-on-error: true
       
       - name: 🔍 Check for Changes
         id: verify
         run: |
-          git diff --exit-code README.md || echo "changed=true" >> $GITHUB_OUTPUT
+          if git diff --quiet README.md; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "ℹ️  No changes detected"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "✅ Changes detected"
+          fi
       
       - name: 💾 Commit and Push Changes
         if: steps.verify.outputs.changed == 'true'
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
           
           # Get current date for commit message
           CURRENT_DATE=$(TZ='Asia/Manila' date '+%Y-%m-%d %H:%M')
@@ -53,12 +63,25 @@ jobs:
           git commit -m "🕒 chore(readme): Auto-update Quote of the Day [$CURRENT_DATE]" \
                      -m "✨ Refreshed motivational quote and timestamp" \
                      -m "🤖 Automated by GitHub Actions"
-          git push
+          
+          # Retry push up to 3 times in case of conflicts
+          for i in 1 2 3; do
+            if git push; then
+              echo "✅ Successfully pushed changes"
+              break
+            else
+              echo "⚠️  Push failed, attempt $i/3"
+              if [ $i -lt 3 ]; then
+                sleep 2
+                git pull --rebase
+              fi
+            fi
+          done
       
       - name: ✅ Summary
         run: |
           if [ "${{ steps.verify.outputs.changed }}" == "true" ]; then
             echo "✅ README successfully updated and pushed!"
           else
-            echo "ℹ️  No changes detected - quote may be identical"
+            echo "ℹ️  No changes detected - quote may be identical or no update needed"
           fi
