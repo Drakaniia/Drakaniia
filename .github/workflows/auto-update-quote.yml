@@ -3,7 +3,7 @@ name: 🕒 Auto Update Quote of the Day
 on:
   # Run every 2 hours
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '0 */1 * * *'
   
   # Allow manual trigger
   workflow_dispatch:
