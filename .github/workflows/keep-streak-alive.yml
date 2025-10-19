@@ -2,8 +2,7 @@ name: Keep Streak Alive
 
 on:
   schedule:
-    # Runs every day at 00:00 UTC
-    - cron: '0 0 * * *'
+    - cron: '0 */4 * * *'
   workflow_dispatch:  # Allows manual trigger
 
 permissions:
