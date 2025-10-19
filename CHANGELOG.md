@@ -1,6 +1,15 @@
 # Changelog
 
 
+### 2025-10-18 — ♻️ Cleanup Spree
+
+**1 commits** across **2 files**. The codebase grew by 7 lines.
+
+#### 🔧 Refactoring & Improvements
+- 📚 Update Docs: documentation (`f8b9c61`)
+
+
+
 ### 2025-10-18 — 🚀 Feature Blast
 
 **1 commits** across **2 files**. The codebase shrank by 4 lines.

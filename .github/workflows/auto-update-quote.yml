@@ -1,0 +1,68 @@
+name: 🕒 Auto Update Quote of the Day
+
+on:
+  # Run every 2 hours
+  schedule:
+    - cron: '0 */2 * * *'  # Every 2 hours (default)
+    # - cron: '0 */4 * * *'  # Every 4 hours
+    # - cron: '0 0 * * *'    # Daily at midnight
+    # - cron: '0 */1 * * *'  # Every hour
+    # - cron: '0 0,12 * * *' # Twice daily (midnight and noon)
+  
+  # Allow manual trigger
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-quote:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: 📦 Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests pytz
+      
+      - name: 🎲 Update Quote in README
+        run: |
+          python update_readme.py
+      
+      - name: 🔍 Check for Changes
+        id: verify
+        run: |
+          git diff --exit-code README.md || echo "changed=true" >> $GITHUB_OUTPUT
+      
+      - name: 💾 Commit and Push Changes
+        if: steps.verify.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Get current date for commit message
+          CURRENT_DATE=$(TZ='Asia/Manila' date '+%Y-%m-%d %H:%M')
+          
+          git add README.md
+          git commit -m "🕒 chore(readme): Auto-update Quote of the Day [$CURRENT_DATE]" \
+                     -m "✨ Refreshed motivational quote and timestamp" \
+                     -m "🤖 Automated by GitHub Actions"
+          git push
+      
+      - name: ✅ Summary
+        run: |
+          if [ "${{ steps.verify.outputs.changed }}" == "true" ]; then
+            echo "✅ README successfully updated and pushed!"
+          else
+            echo "ℹ️  No changes detected - quote may be identical"
+          fi
