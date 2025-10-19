@@ -136,7 +136,11 @@ Other        1 hr 10 mins    █░░░░░░░░░░░░░░░░
 
 ## 💬 Quote of the Day
 
-![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
+> "Wishing to be friends is quick work, but friendship is a slow ripening fruit."
+> 
+> **— Aristotle**
+
+_🤖 Auto-updated: 2025-10-19 09:17:20 (UTC+8)_
 
 </div>
 
