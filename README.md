@@ -16,7 +16,7 @@
 
 <div align="center">
 
-## <img src="https://readme-typing-svg.herokuapp.com?" alt="icon"> GitHub Analytics
+## 🚀 GitHub Analytics
 
 <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Drakaniia&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=3F8CFF&icon_color=3F8CFF&text_color=C9D1D9" alt="GitHub Stats" />
 <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=Drakaniia&theme=tokyonight&hide_border=true&background=0D1117&stroke=3F8CFF&ring=3F8CFF&fire=FF6B6B&currStreakLabel=3F8CFF" alt="GitHub Streak" />
