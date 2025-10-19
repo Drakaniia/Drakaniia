@@ -1,6 +1,15 @@
 # Changelog
 
 
+### 2025-10-19 — 🧹 Spring Cleaning
+
+**1 commits** across **4 files**. The codebase shrank by 176 lines.
+
+#### 🔄 Other Changes
+- 🐛 Remove Git: 4 files (`90bb230`)
+
+
+
 ### 2025-10-19 — 🔧 Bug Squashing Session
 
 **1 commits** across **2 files**. The codebase grew by 5 lines.

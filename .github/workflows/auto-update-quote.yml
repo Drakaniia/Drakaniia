@@ -14,15 +14,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: Trigger Update
+      - name: Update Timestamp
         run: |
-          # Just make a tiny change to force README refresh
-          echo "<!-- Updated: $(date) -->" >> README.md
+          # Update a hidden comment in README to trigger refresh
+          DATE=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          sed -i "s/<!-- Last updated: .* -->/<!-- Last updated: $DATE -->/" README.md || \
+          echo "<!-- Last updated: $DATE -->" >> README.md
           
-      - name: Commit
+      - name: Commit & Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "Update quote" || exit 0
+          git diff --staged --quiet || git commit -m "🤖 Auto-update: $(date -u +"%Y-%m-%d %H:%M UTC")"
           git push
