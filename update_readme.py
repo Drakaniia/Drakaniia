@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 GitHub Profile README Auto-Updater
-Updates the quote with a styled card design
+Fetches quotes from API and displays them in a styled card
 Maintains GitHub activity streak through automated commits
 """
 
@@ -9,30 +9,13 @@ import os
 import re
 from datetime import datetime
 import pytz
-import random
+import urllib.request
+import json
 
 # Configuration
 README_PATH = "README.md"
 TIMEZONE = pytz.timezone("Asia/Manila")  # UTC+8 (Philippines)
-
-# Curated quote collection
-QUOTES = [
-    {"text": "The only way to do great work is to love what you do.", "author": "Steve Jobs"},
-    {"text": "Innovation distinguishes between a leader and a follower.", "author": "Steve Jobs"},
-    {"text": "Code is like humor. When you have to explain it, it's bad.", "author": "Cory House"},
-    {"text": "First, solve the problem. Then, write the code.", "author": "John Johnson"},
-    {"text": "Programming isn't about what you know; it's about what you can figure out.", "author": "Chris Pine"},
-    {"text": "The best error message is the one that never shows up.", "author": "Thomas Fuchs"},
-    {"text": "Simplicity is the soul of efficiency.", "author": "Austin Freeman"},
-    {"text": "Make it work, make it right, make it fast.", "author": "Kent Beck"},
-    {"text": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.", "author": "Martin Fowler"},
-    {"text": "Experience is the name everyone gives to their mistakes.", "author": "Oscar Wilde"},
-    {"text": "The only true wisdom is in knowing you know nothing.", "author": "Socrates"},
-    {"text": "Wishing to be friends is quick work, but friendship is a slow ripening fruit.", "author": "Aristotle"},
-    {"text": "Success is not final, failure is not fatal: it is the courage to continue that counts.", "author": "Winston Churchill"},
-    {"text": "The future belongs to those who believe in the beauty of their dreams.", "author": "Eleanor Roosevelt"},
-    {"text": "It does not matter how slowly you go as long as you do not stop.", "author": "Confucius"},
-]
+QUOTE_API_URL = "https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight"
 
 
 def get_current_timestamp():
@@ -41,9 +24,26 @@ def get_current_timestamp():
     return now.strftime("%Y-%m-%d %H:%M:%S")
 
 
-def get_random_quote():
-    """Get a random quote from the collection"""
-    return random.choice(QUOTES)
+def fetch_quote_from_api():
+    """Fetch a random quote from the API"""
+    try:
+        # The API returns an SVG, so we'll use a different quotes API that returns JSON
+        # Using quotable.io API for reliable JSON responses
+        api_url = "https://api.quotable.io/random"
+        
+        with urllib.request.urlopen(api_url, timeout=10) as response:
+            data = json.loads(response.read().decode())
+            return {
+                "text": data["content"],
+                "author": data["author"]
+            }
+    except Exception as e:
+        print(f"⚠️  API fetch failed: {e}")
+        # Fallback quote if API fails
+        return {
+            "text": "The only way to do great work is to love what you do.",
+            "author": "Steve Jobs"
+        }
 
 
 def update_readme():
@@ -57,9 +57,13 @@ def update_readme():
     with open(README_PATH, "r", encoding="utf-8") as f:
         content = f.read()
     
-    # Get random quote and timestamp
-    quote_data = get_random_quote()
+    # Fetch quote from API and get timestamp
+    quote_data = fetch_quote_from_api()
     timestamp = get_current_timestamp()
+    
+    # Escape any potential HTML characters in the quote
+    quote_text = quote_data['text'].replace('"', '&quot;').replace('<', '&lt;').replace('>', '&gt;')
+    quote_author = quote_data['author'].replace('"', '&quot;').replace('<', '&lt;').replace('>', '&gt;')
     
     # Format new quote section with styled card
     new_quote_section = f'''<div align="center">
@@ -72,10 +76,10 @@ def update_readme():
       <span style="font-size: 48px; color: #FFD700; opacity: 0.8; font-family: Georgia, serif;">"</span>
     </div>
     <p style="font-size: 18px; color: #FFFFFF; text-align: center; line-height: 1.6; margin: 0 0 20px 0; font-style: italic; font-weight: 400;">
-      {quote_data['text']}
+      {quote_text}
     </p>
     <div style="text-align: right; margin-top: 15px;">
-      <span style="font-size: 16px; color: #FFD700; font-weight: 600;">— {quote_data['author']}</span>
+      <span style="font-size: 16px; color: #FFD700; font-weight: 600;">— {quote_author}</span>
     </div>
   </div>
 </div>
@@ -112,7 +116,7 @@ def main():
     print("=" * 60)
     
     # Update README with styled quote card
-    print("\n📝 Updating README.md with styled quote card...")
+    print("\n📝 Fetching quote from API...")
     success = update_readme()
     
     if success:
