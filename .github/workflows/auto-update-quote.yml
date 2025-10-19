@@ -1,4 +1,4 @@
-name: Update Quote
+name: Update Quote & Activity
 
 on:
   schedule:
@@ -11,20 +11,81 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+    
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
       
-      - name: Update Timestamp
-        run: |
-          # Update a hidden comment in README to trigger refresh
-          DATE=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
-          sed -i "s/<!-- Last updated: .* -->/<!-- Last updated: $DATE -->/" README.md || \
-          echo "<!-- Last updated: $DATE -->" >> README.md
-          
-      - name: Commit & Push
+      - name: Setup Git Config
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md
-          git diff --staged --quiet || git commit -m "🤖 Auto-update: $(date -u +"%Y-%m-%d %H:%M UTC")"
+      
+      - name: Update Timestamp in README
+        run: |
+          TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          
+          # Check if timestamp comment exists
+          if grep -q "<!-- Last updated:" README.md; then
+            echo "Updating existing timestamp..."
+            sed -i "s/<!-- Last updated: .* -->/<!-- Last updated: $TIMESTAMP -->/" README.md
+          else
+            echo "Adding new timestamp..."
+            echo "" >> README.md
+            echo "<!-- Last updated: $TIMESTAMP -->" >> README.md
+          fi
+          
+          echo "Timestamp updated to: $TIMESTAMP"
+      
+      - name: Create Activity Marker
+        run: |
+          # Ensure .github directory exists
+          mkdir -p .github
+          
+          # Create/update a marker file with timestamp
+          date -u +"%Y-%m-%d %H:%M:%S UTC" > .github/.last-activity
+          
+          echo "Activity marker created"
+      
+      - name: Commit Changes
+        run: |
+          # Stage all changes
+          git add README.md .github/.last-activity
+          
+          # Check if there are staged changes
+          if git diff --staged --quiet; then
+            echo "⚠️ No changes detected. Creating a dummy change..."
+            # Force create a change
+            echo "$(date +%s)" > .github/.force-update
+            git add .github/.force-update
+          fi
+          
+          # Commit with timestamp
+          COMMIT_MESSAGE="🤖 Auto-update: $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git commit -m "$COMMIT_MESSAGE"
+          
+          echo "✅ Commit created: $COMMIT_MESSAGE"
+      
+      - name: Push Changes
+        run: |
+          echo "Pushing to repository..."
           git push
+          
+          if [ $? -eq 0 ]; then
+            echo "✅ Push successful!"
+          else
+            echo "❌ Push failed!"
+            exit 1
+          fi
+      
+      - name: Summary
+        if: always()
+        run: |
+          echo "### Workflow Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Timestamp**: $(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "- **Last Commit**: $(git log -1 --pretty=format:'%h - %s')" >> $GITHUB_STEP_SUMMARY
+          echo "- **Status**: ${{ job.status }}" >> $GITHUB_STEP_SUMMARY

@@ -1,0 +1,80 @@
+name: Keep Streak Alive
+
+on:
+  schedule:
+    # Runs every day at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:  # Allows manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-activity:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      
+      - name: Update Activity Tracker
+        run: |
+          # Get current date and time
+          TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          DATE=$(date -u +"%Y-%m-%d")
+          
+          # Generate a random emoji for variety
+          EMOJIS=("🚀" "✨" "🎯" "💻" "🔥" "⚡" "🌟" "💪" "🎨" "🐛" "📚" "🏆" "🎮" "☕" "🌈")
+          RANDOM_EMOJI=${EMOJIS[$RANDOM % ${#EMOJIS[@]}]}
+          
+          # Update or create the activity log file
+          if [ ! -f .github/activity-log.txt ]; then
+            echo "# Activity Log" > .github/activity-log.txt
+            echo "This file is auto-updated to maintain GitHub activity streak." >> .github/activity-log.txt
+            echo "" >> .github/activity-log.txt
+          fi
+          
+          # Add new entry
+          echo "$RANDOM_EMOJI Activity recorded on $TIMESTAMP" >> .github/activity-log.txt
+          
+          # Update hidden comment in README
+          if grep -q "<!-- Last updated:" README.md; then
+            sed -i "s/<!-- Last updated: .* -->/<!-- Last updated: $TIMESTAMP -->/" README.md
+          else
+            echo "" >> README.md
+            echo "<!-- Last updated: $TIMESTAMP -->" >> README.md
+          fi
+      
+      - name: Commit and Push Changes
+        run: |
+          git add -A
+          
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            # Force a change by updating timestamp
+            date +%s > .github/.timestamp
+            git add .github/.timestamp
+          fi
+          
+          # Create commit with dynamic message
+          COMMIT_MSG="🤖 Daily activity update: $(date -u +'%Y-%m-%d')"
+          git commit -m "$COMMIT_MSG" || echo "Nothing to commit"
+          
+          # Push changes
+          git push || echo "Push failed, but will retry on next run"
+      
+      - name: Verify Commit
+        if: success()
+        run: |
+          echo "✅ Successfully updated activity!"
+          echo "Latest commit:"
+          git log -1 --pretty=format:"%h - %s (%cr)"
