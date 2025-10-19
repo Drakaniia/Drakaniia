@@ -1,6 +1,15 @@
 # Changelog
 
 
+### 2025-10-19 — ⚡ Steady Progress
+
+**1 commits** across **1 files**. The codebase evolved by 0 lines.
+
+#### 🔄 Other Changes
+- Merge branch 'main' of https://github.com/Drakaniia/Drakaniia (`1766623`)
+
+
+
 ### 2025-10-18 — ♻️ Cleanup Spree
 
 **1 commits** across **2 files**. The codebase grew by 7 lines.

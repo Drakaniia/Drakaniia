@@ -1,69 +1,19 @@
 #!/usr/bin/env python3
 """
 GitHub Profile README Auto-Updater
-Fetches a random quote and updates the README.md file
+Updates the quote image URL with a cache-busting timestamp
 Maintains GitHub activity streak through automated commits
 """
 
 import os
 import re
-import requests
 from datetime import datetime
 import pytz
 
 # Configuration
 README_PATH = "README.md"
 TIMEZONE = pytz.timezone("Asia/Manila")  # UTC+8 (Philippines)
-QUOTE_APIS = [
-    "https://api.quotable.io/random",
-    "https://zenquotes.io/api/random",
-]
-
-# Fallback quotes if APIs fail
-FALLBACK_QUOTES = [
-    {"text": "The only way to do great work is to love what you do.", "author": "Steve Jobs"},
-    {"text": "Code is like humor. When you have to explain it, it's bad.", "author": "Cory House"},
-    {"text": "First, solve the problem. Then, write the code.", "author": "John Johnson"},
-    {"text": "Experience is the name everyone gives to their mistakes.", "author": "Oscar Wilde"},
-    {"text": "In order to be irreplaceable, one must always be different.", "author": "Coco Chanel"},
-    {"text": "Java is to JavaScript what car is to Carpet.", "author": "Chris Heilmann"},
-    {"text": "Knowledge is power.", "author": "Francis Bacon"},
-    {"text": "Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday's code.", "author": "Dan Salomon"},
-    {"text": "Perfection is achieved not when there is nothing more to add, but rather when there is nothing more to take away.", "author": "Antoine de Saint-Exupery"},
-    {"text": "Code never lies, comments sometimes do.", "author": "Ron Jeffries"},
-]
-
-
-def fetch_quote():
-    """Fetch a random quote from APIs or fallback list"""
-    # Try APIs first
-    for api_url in QUOTE_APIS:
-        try:
-            response = requests.get(api_url, timeout=5)
-            if response.status_code == 200:
-                data = response.json()
-                
-                # Handle different API response formats
-                if api_url.startswith("https://api.quotable.io"):
-                    return {
-                        "text": data.get("content", ""),
-                        "author": data.get("author", "Unknown")
-                    }
-                elif api_url.startswith("https://zenquotes.io"):
-                    if isinstance(data, list) and len(data) > 0:
-                        return {
-                            "text": data[0].get("q", ""),
-                            "author": data[0].get("a", "Unknown")
-                        }
-        except Exception as e:
-            print(f"⚠️  API {api_url} failed: {str(e)}")
-            continue
-    
-    # Fallback to local quotes
-    import random
-    quote = random.choice(FALLBACK_QUOTES)
-    print("ℹ️  Using fallback quote")
-    return quote
+QUOTE_API_BASE = "https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight"
 
 
 def get_current_timestamp():
@@ -72,8 +22,14 @@ def get_current_timestamp():
     return now.strftime("%Y-%m-%d %H:%M:%S")
 
 
-def update_readme(quote):
-    """Update the Quote of the Day section in README.md"""
+def get_quote_url_with_cache_buster():
+    """Generate quote URL with timestamp to force refresh"""
+    timestamp = int(datetime.now(TIMEZONE).timestamp())
+    return f"{QUOTE_API_BASE}&t={timestamp}"
+
+
+def update_readme():
+    """Update the Quote of the Day section in README.md with refreshed image URL"""
     
     if not os.path.exists(README_PATH):
         print(f"❌ Error: {README_PATH} not found!")
@@ -83,15 +39,16 @@ def update_readme(quote):
     with open(README_PATH, "r", encoding="utf-8") as f:
         content = f.read()
     
-    # Format new quote section
+    # Generate new quote URL with cache buster
+    quote_url = get_quote_url_with_cache_buster()
     timestamp = get_current_timestamp()
+    
+    # Format new quote section
     new_quote_section = f'''<div align="center">
 
 ## 💬 Quote of the Day
 
-> "{quote['text']}"
-> 
-> **— {quote['author']}**
+![Quote]({quote_url})
 
 _🤖 Auto-updated: {timestamp} (UTC+8)_
 
@@ -110,8 +67,7 @@ _🤖 Auto-updated: {timestamp} (UTC+8)_
             f.write(updated_content)
         
         print("✅ README.md updated successfully!")
-        print(f"📝 Quote: \"{quote['text']}\"")
-        print(f"👤 Author: {quote['author']}")
+        print(f"🔗 Quote URL: {quote_url}")
         print(f"🕐 Timestamp: {timestamp}")
         return True
     else:
@@ -125,17 +81,9 @@ def main():
     print("🚀 GitHub Profile Auto-Updater")
     print("=" * 60)
     
-    # Fetch quote
-    print("\n📡 Fetching new quote...")
-    quote = fetch_quote()
-    
-    if not quote or not quote.get("text"):
-        print("❌ Failed to fetch quote")
-        return 1
-    
-    # Update README
-    print("\n📝 Updating README.md...")
-    success = update_readme(quote)
+    # Update README with refreshed quote URL
+    print("\n📝 Updating README.md with fresh quote...")
+    success = update_readme()
     
     if success:
         print("\n" + "=" * 60)
