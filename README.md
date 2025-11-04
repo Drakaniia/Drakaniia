@@ -12,7 +12,9 @@
 
 </div>
 
----
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=4&section=header&text=&fontSize=0" width="100%"/>
+</div>
 
 <div align="center">
 
@@ -26,7 +28,9 @@
 
 </div>
 
----
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=4&section=header&text=&fontSize=0" width="100%"/>
+</div>
 
 <div align="center">
 
@@ -64,7 +68,9 @@
 
 </div>
 
----
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=4&section=header&text=&fontSize=0" width="100%"/>
+</div>
 
 <div align="center">
 
@@ -93,7 +99,9 @@ const qwenzy = {
 
 <br clear="right"/>
 
----
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=4&section=header&text=&fontSize=0" width="100%"/>
+</div>
 
 <div align="center">
 
@@ -112,7 +120,9 @@ Other        1 hr 10 mins    █░░░░░░░░░░░░░░░░
 
 </div>
 
----
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=4&section=header&text=&fontSize=0" width="100%"/>
+</div>
 
 <div align="center">
 
@@ -122,7 +132,9 @@ Other        1 hr 10 mins    █░░░░░░░░░░░░░░░░
 
 </div>
 
----
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=4&section=header&text=&fontSize=0" width="100%"/>
+</div>
 
 <div align="center">
 
@@ -136,7 +148,9 @@ Other        1 hr 10 mins    █░░░░░░░░░░░░░░░░
 
 </div>
 
----
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=4&section=header&text=&fontSize=0" width="100%"/>
+</div>
 
 <div align="center">
 
@@ -146,7 +160,9 @@ Other        1 hr 10 mins    █░░░░░░░░░░░░░░░░
 
 </div>
 
----
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=4&section=header&text=&fontSize=0" width="100%"/>
+</div>
 
 <div align="center">
 

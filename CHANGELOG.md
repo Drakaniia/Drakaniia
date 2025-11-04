@@ -127,3 +127,15 @@ All notable changes to this project will be documented in this file.
 **Total**: 1 commit(s)
 
 ---
+
+### 2025-11-04
+
+#### ✨ New Features
+
+- **ADD DESDIN** (`649bf12`) - *Qwenzy*
+  - 📁 2 doc files, 1 config file, 1 frontend file, 1 backend file
+
+**Total**: 1 commit(s)
+
+---
+
