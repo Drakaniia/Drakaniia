@@ -116,3 +116,14 @@ All notable changes to this project will be documented in this file.
 
 #### ✨ New Features
 - Add snake animation workflow (`7a3c78a`)
+
+### 2025-11-04
+
+#### 📚 Documentation
+
+- **delete readme** (`7444be7`) - *Qwenzy*
+  - 📄 `README.md`
+
+**Total**: 1 commit(s)
+
+---
