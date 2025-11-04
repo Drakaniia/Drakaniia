@@ -18,7 +18,7 @@
 
 <div align="center">
 
-## <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=32&duration=3000&pause=500&color=FF6B6B,4ECDC4,45B7D1,96CEB4,FECA57,FF9FF3,54A0FF&center=false&vCenter=true&multiline=false&repeat=true&width=300&height=40&lines=GitHub+Analytics" />
+## <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> GitHub Analytics
 
 <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Drakaniia&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=3F8CFF&icon_color=3F8CFF&text_color=C9D1D9" alt="GitHub Stats" />
 <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=Drakaniia&theme=tokyonight&hide_border=true&background=0D1117&stroke=3F8CFF&ring=3F8CFF&fire=FF6B6B&currStreakLabel=3F8CFF" alt="GitHub Streak" />
@@ -34,7 +34,7 @@
 
 <div align="center">
 
-## <img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="30"> <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=32&duration=2500&pause=400&color=9B59B6,E74C3C,F39C12,27AE60,3498DB,E67E22,1ABC9C&center=false&vCenter=true&multiline=false&repeat=true&width=350&height=40&lines=Technologies+%26+Tools" />
+## <img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="30"> Technologies & Tools
 
 ### <img src="https://media.giphy.com/media/LMt9638dO8dftAjtco/giphy.gif" width="25"> Programming Languages
 
