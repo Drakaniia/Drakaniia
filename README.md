@@ -10,9 +10,16 @@
 
 ## Previously at:
 <div align="center">
-  <a href="https://www.facebook.com/">
+  <a href="https://www.facebook.com">
     <img src="https://i.pinimg.com/736x/b7/06/fa/b706fa17832e8854ee125404a655f0df.jpg" width="50" style="border-radius: 50%;">
+  </a>
   <a href="https://www.nasa.gov/">
     <img src="https://img.icons8.com/color/600/nasa.png" width="50" style="border-radius: 50%;">
+  </a>
+  <a href="https://www.microsoft.com/">
+    <img src="https://img.icons8.com/color/600/microsoft.png" width="50" style="border-radius: 50%;">
+  </a>
+  <a href="https://about.google/">
+    <img src="https://img.icons8.com/color/600/google-logo.png" width="50" style="border-radius: 50%;">
   </a>
 </div>
