@@ -2,35 +2,35 @@
 <tr>
 
 <pre>
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Drakaniia -———————————————————————————————————
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%##*##%@@%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">OS</font>....................... <font color="#FFFFFF">Windows 10, macOS, Arch Linux</font>
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%#+-.::.     .:-=-.-=-=#%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Uptime</font>................... <font color="#FFFFFF">9 months (building with AI, since Nov 2025)</font>
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%**+=-..                       ..-*###%@@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Host</font>..................... <font color="#FFFFFF">Bukidnon State University (BSIT, Yr 3)</font>
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@#-                                    :==#@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Kernel</font>................... <font color="#FFFFFF">AI, Design & Software Engineer</font>
-@@@@@@@@@@@@@@@@@@@@@@@@%#=:                                       ..:#%@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">IDE</font>...................... <font color="#FFFFFF">IDEA 2023.3.2, VSCode 1.96.0</font>
-@@@@@@@@@@@@@@@@@@@@@@@+:                   ..:-------=++=-:          .-%@@@@@@@@@@@@@@@@@@@@@@@   .
-@@@@@@@@@@@@@@@@@@@@@@#                  .:=#%%@@@@@@@@@@@%%#*=-.      .*%@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Languages.Programming</font>.... <font color="#FFFFFF">TypeScript, JavaScript, Rust</font>
-@@@@@@@@@@@@@@@@@@@@@@-               .:-=+++===+#%@@@@@%#*+++==-.      -%@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Languages.Computer</font>....... <font color="#FFFFFF">HTML, CSS, JSON, YAML</font>
-@@@@@@@@@@@@@@@@@@@@@%.              .-===+*+===**#%@@@%###**+==+*=.    =@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Languages.Real</font>........... <font color="#FFFFFF">English, Bisaya</font>  
-@@@@@@@@@@@@@@@@@@@@@%.            .:=+-..=#*==**#*#%%@%%####-:::=%#   -@@@@@@@@@@@@@@@@@@@@@@@@   . 
-@@@@@@@@@@@@@@@@@@@@@@#:         .:-=*###%%%@@@@%#***%@@@%%%@@%%%#%%-  #@@@@@@@@@@@@@@@@@@@@@@@@   - Contact -———————————————————————————————————
-@@@@@@@@@@@@@@@@@@@@@@@%.        +%+-=*%%@@@@@@@%=**=*#%#+%%@@@@@@@@*.+@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Email</font>..................... <font color="#FFFFFF">alistairybaez574@gmail.com</font>
-@@@@@@@@@@@@@@@@@@@@@@@@#=+=..   +%%+:-+*%%@@@@%%*##*#%%###%@@@@@@@@##@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Phone</font>..................... <font color="#FFFFFF">+63 962 394 1624</font>
-@@@@@@@@@@@@@@@@@@@@@@@@@@%#-=.  .*%%+:-=+*##%####**########%%%%@@@%%%@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">LinkedIN</font>.................. <font color="#FFFFFF">alistair-ybañez-0b50212b2</font>
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@#=:--. -%%+::-=++**++=-=+***#*+=+*#%@@%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">GitHub</font>.................... <font color="#FFFFFF">Drakaniia</font>
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%#+:  -*%%*-::--=*******#**#*#####%@@%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Threads</font>................... <font color="#FFFFFF">@washme.wepp</font>
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%*-.+-:+*-....-+*##%@@@@@@@%%%%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Facebook</font>.................. <font color="#FFFFFF">alii.2306</font>
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%#-  =-...   .-=+**##*****###%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   .
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*                ......:+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   - GitHub Stats -———————————————————————————————————
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%-        .:::::::::-=**#%@@#+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIxNCI+PHRleHQgeD0iMCIgeT0iMTEiIGZpbGw9IiMwMEZGODgiIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiPlJlcG9zPC90ZXh0Pjwvc3ZnPg==" alt="Repos" width="36" height="14">..................... <font color="#FFFFFF">15</font>
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*-+-.:. ...:=******#%%%@@@@@*:  :+#%@@@@@@@@@@@@@@@@@@@@@@@@   . <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSIxNCI+PHRleHQgeD0iMCIgeT0iMTEiIGZpbGw9IiMwMEZGODgiIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiPkNvbnRyaWJ1dGVkPC90ZXh0Pjwvc3ZnPg==" alt="Contributed" width="80" height="14">............... <font color="#FFFFFF">4</font>
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%-.:---::-==+**#%%@@@@@@@%*:       .-+*#%%@@@@@@@@@@@@@@@@@@   . <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIxNCI+PHRleHQgeD0iMCIgeT0iMTEiIGZpbGw9IiMwMEU1RkYiIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiPlN0YXJzPC90ZXh0Pjwvc3ZnPg==" alt="Stars" width="36" height="14">..................... <font color="#FFFFFF">52</font>
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%*=%@@#+=+*+-=+#%%@@@@@@@@@%*:               .::-=+*#%%@@@@@@@@@   . <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MSIgaGVpZ2h0PSIxNCI+PHRleHQgeD0iMCIgeT0iMTEiIGZpbGw9IiMwMEZGODgiIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiPkNvbW1pdHM8L3RleHQ+PC9zdmc+" alt="Commits" width="51" height="14">................... <font color="#FFFFFF">3,457</font>
-@@@@@@@@@@@@@@@@@@@@@@@@@@@%#*+=. -@@%#+=---:+#@@@@@@@@@@%+.                          ..:-==+*#%   . <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NSIgaGVpZ2h0PSIxNCI+PHRleHQgeD0iMCIgeT0iMTEiIGZpbGw9IiNGRkFBMDAiIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiPkZvbGxvd2VyczwvdGV4dD48L3N2Zz4=" alt="Followers" width="65" height="14">................. <font color="#FFFFFF">29</font>
-@@@@@@@@@@@@@@@@@@@@%%#*+-:.      *%*.         .=#%@@@@@*:                                         . <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NCIgaGVpZ2h0PSIxNCI+PHRleHQgeD0iMCIgeT0iMTEiIGZpbGw9IiMwMEZGODgiIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiPlRvcCBMYW5ndWFnZXM8L3RleHQ+PC9zdmc+" alt="Top Languages" width="94" height="14">............. <font color="#FFFFFF">TypeScript 53%, HTML 11%, CSS 10%</font>
-@@@@@@@@@@@@@@%%#+=-.           ..#+         .:-:.-+%@#:                                           . <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDQiIGhlaWdodD0iMTQiPjx0ZXh0IHg9IjAiIHk9IjExIiBmaWxsPSIjMDBGRjg4IiBmb250LWZhbWlseT0ibW9ub3NwYWNlLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIj5Db250cmlidXRpb25zICgxMm1vKTwvdGV4dD48L3N2Zz4=" alt="Contributions (12mo)" width="144" height="14">...... <font color="#FFFFFF">6,917</font>
-@@@@@@@@@%*=-:.               .*#=##.       *%@@@%%#*-                                             .
-@@@@@@@%=.                   .#@%#%*        %@%@@@@*.                                              .
+<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Drakaniia -———————————————————————————————————</sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%##*##%@@%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">OS</font>....................... <font color="#FFFFFF">Windows 10, macOS, Arch Linux</font></sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%#+-.::.     .:-=-.-=-=#%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Uptime</font>................... <font color="#FFFFFF">9 months (building with AI, since Nov 2025)</font></sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%**+=-..                       ..-*###%@@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Host</font>..................... <font color="#FFFFFF">Bukidnon State University (BSIT, Yr 3)</font></sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@#-                                    :==#@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Kernel</font>................... <font color="#FFFFFF">AI, Design & Software Engineer</font></sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@@@%#=:                                       ..:#%@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">IDE</font>...................... <font color="#FFFFFF">IDEA 2023.3.2, VSCode 1.96.0</font></sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@@+:                   ..:-------=++=-:          .-%@@@@@@@@@@@@@@@@@@@@@@@   .</sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@#                  .:=#%%@@@@@@@@@@@%%#*=-.      .*%@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Languages.Programming</font>.... <font color="#FFFFFF">TypeScript, JavaScript, Rust</font></sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@-               .:-=+++===+#%@@@@@%#*+++==-.      -%@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Languages.Computer</font>....... <font color="#FFFFFF">HTML, CSS, JSON, YAML</font></sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@%.              .-===+*+===**#%@@@%###**+==+*=.    =@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Languages.Real</font>........... <font color="#FFFFFF">English, Bisaya</font>  </sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@%.            .:=+-..=#*==**#*#%%@%%####-:::=%#   -@@@@@@@@@@@@@@@@@@@@@@@@   . </sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@#:         .:-=*###%%%@@@@%#***%@@@%%%@@%%%#%%-  #@@@@@@@@@@@@@@@@@@@@@@@@   - Contact -———————————————————————————————————</sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@@%.        +%+-=*%%@@@@@@@%=**=*#%#+%%@@@@@@@@*.+@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Email</font>..................... <font color="#FFFFFF">alistairybaez574@gmail.com</font></sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@@@#=+=..   +%%+:-+*%%@@@@%%*##*#%%###%@@@@@@@@##@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Phone</font>..................... <font color="#FFFFFF">+63 962 394 1624</font></sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@%#-=.  .*%%+:-=+*##%####**########%%%%@@@%%%@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">LinkedIN</font>.................. <font color="#FFFFFF">alistair-ybañez-0b50212b2</font></sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@#=:--. -%%+::-=++**++=-=+***#*+=+*#%@@%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">GitHub</font>.................... <font color="#FFFFFF">Drakaniia</font></sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%#+:  -*%%*-::--=*******#**#*#####%@@%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Threads</font>................... <font color="#FFFFFF">@washme.wepp</font></sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%*-.+-:+*-....-+*##%@@@@@@@%%%%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Facebook</font>.................. <font color="#FFFFFF">alii.2306</font></sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%#-  =-...   .-=+**##*****###%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   .</sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*                ......:+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   - GitHub Stats -———————————————————————————————————</sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%-        .:::::::::-=**#%@@#+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#00FF88">Repos</font>..................... <font color="#FFFFFF">15</font></sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*-+-.:. ...:=******#%%%@@@@@*:  :+#%@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#00FF88">Contributed</font>............... <font color="#FFFFFF">4</font></sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%-.:---::-==+**#%%@@@@@@@%*:       .-+*#%%@@@@@@@@@@@@@@@@@@   . <font color="#00E5FF">Stars</font>..................... <font color="#FFFFFF">52</font></sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%*=%@@#+=+*+-=+#%%@@@@@@@@@%*:               .::-=+*#%%@@@@@@@@@   . <font color="#00FF88">Commits</font>................... <font color="#FFFFFF">3,458</font></sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@%#*+=. -@@%#+=---:+#@@@@@@@@@@%+.                          ..:-==+*#%   . <font color="#FFAA00">Followers</font>................. <font color="#FFFFFF">29</font></sub>
+<sub>@@@@@@@@@@@@@@@@@@@@%%#*+-:.      *%*.         .=#%@@@@@*:                                         . <font color="#00FF88">Top Languages</font>............. <font color="#FFFFFF">TypeScript 53%, HTML 11%, CSS 10%</font></sub>
+<sub>@@@@@@@@@@@@@@%%#+=-.           ..#+         .:-:.-+%@#:                                           . <font color="#00FF88">Contributions (12mo)</font>...... <font color="#FFFFFF">6,918</font></sub>
+<sub>@@@@@@@@@%*=-:.               .*#=##.       *%@@@%%#*-                                             .</sub>
+<sub>@@@@@@@%=.                   .#@%#%*        %@%@@@@*.                                              .</sub>
 </pre>
 
 <td width="50%" valign="top">

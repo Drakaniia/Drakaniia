@@ -248,6 +248,14 @@ function markerDotColumn(line) {
   return -1;
 }
 
+// Art rows may be wrapped in <sub>...</sub> (the ascii-art tool's --small
+// rendering, which displays ~30% smaller on GitHub). Keep the wrapper intact
+// when rewriting a row's trailing text.
+function unwrapSub(line) {
+  const m = line.match(/^<sub>(.*)<\/sub>$/);
+  return m ? { wrapped: true, inner: m[1] } : { wrapped: false, inner: line };
+}
+
 function updateReadme(statLines) {
   const raw = readFileSync(README_PATH, 'utf8');
   const crlf = raw.includes('\r\n');
@@ -259,7 +267,7 @@ function updateReadme(statLines) {
   if (headerIdx === -1) throw new Error(`Could not find the "- GitHub Stats -" section in ${README_PATH}`);
 
   // Reference bullet column from the first existing stat row.
-  const refDot = markerDotColumn(lines[headerIdx + 1]);
+  const refDot = markerDotColumn(unwrapSub(lines[headerIdx + 1]).inner);
   if (refDot === -1) throw new Error('Could not locate the stats bullet column in README.md');
 
   // Sanity-check the rows we are about to rewrite: they must be art rows,
@@ -273,14 +281,14 @@ function updateReadme(statLines) {
     }
   }
 
-  // Rewrite the stats rows.
+  // Rewrite the stats rows (preserving any <sub> wrapper).
   for (let i = 0; i < statLines.length; i++) {
     const idx = headerIdx + 1 + i;
-    const line = lines[idx];
-    const dot = markerDotColumn(line);
-    const prefix = (dot === -1 ? line.trimEnd() : line.slice(0, dot)).trimEnd();
+    const { wrapped, inner } = unwrapSub(lines[idx]);
+    const dot = markerDotColumn(inner);
+    const prefix = (dot === -1 ? inner.trimEnd() : inner.slice(0, dot)).trimEnd();
     const pad = ' '.repeat(Math.max(refDot - prefix.length, 1));
-    lines[idx] = prefix + pad + statLines[i];
+    lines[idx] = (wrapped ? '<sub>' : '') + prefix + pad + statLines[i] + (wrapped ? '</sub>' : '');
   }
 
   // Clear any stale stat rows left over from a previous run that rendered
@@ -290,9 +298,10 @@ function updateReadme(statLines) {
     const line = lines[idx];
     if (line === undefined || line.includes('</pre>')) break;
     if (!line.includes('@') || (!line.includes('. <font') && !line.includes('. <img'))) continue;
-    const dot = markerDotColumn(line);
-    const prefix = (dot === -1 ? line.trimEnd() : line.slice(0, dot)).trimEnd();
-    lines[idx] = prefix + ' '.repeat(Math.max(refDot - prefix.length, 1)) + '. ';
+    const { wrapped, inner } = unwrapSub(line);
+    const dot = markerDotColumn(inner);
+    const prefix = (dot === -1 ? inner.trimEnd() : inner.slice(0, dot)).trimEnd();
+    lines[idx] = (wrapped ? '<sub>' : '') + prefix + ' '.repeat(Math.max(refDot - prefix.length, 1)) + '. ' + (wrapped ? '</sub>' : '');
   }
 
   const eol = crlf ? '\r\n' : '\n';
