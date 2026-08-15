@@ -4,10 +4,10 @@
 <pre>
 <sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Drakaniia -———————————————————————————————————</sub>
 <sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%##*##%@@%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">OS</font>....................... <font color="#FFFFFF">Windows 10, macOS, Arch Linux</font></sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%#+-.::.     .:-=-.-=-=#%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Uptime</font>................... <font color="#FFFFFF">9 months (building with AI, since Nov 2025)</font></sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%**+=-..                       ..-*###%@@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Host</font>..................... <font color="#FFFFFF">Bukidnon State University (BSIT, Yr 3)</font></sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%#+-.::.     .:-=-.-=-=#%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Uptime</font>................... <font color="#FFFFFF">9 months (since Nov 2025)</font></sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%**+=-..                       ..-*###%@@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Host</font>..................... <font color="#FFFFFF">BukSU (BSIT, Yr 3)</font></sub>
 <sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@#-                                    :==#@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Kernel</font>................... <font color="#FFFFFF">AI, Design & Software Engineer</font></sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@@@%#=:                                       ..:#%@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">IDE</font>...................... <font color="#FFFFFF">IDEA 2023.3.2, VSCode 1.96.0</font></sub>
+<sub>@@@@@@@@@@@@@@@@@@@@@@@@%#=:                                       ..:#%@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">IDE</font>...................... <font color="#FFFFFF">IntelliJ IDEA, VS Code</font></sub>
 <sub>@@@@@@@@@@@@@@@@@@@@@@@+:                   ..:-------=++=-:          .-%@@@@@@@@@@@@@@@@@@@@@@@   .</sub>
 <sub>@@@@@@@@@@@@@@@@@@@@@@#                  .:=#%%@@@@@@@@@@@%%#*=-.      .*%@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Languages.Programming</font>.... <font color="#FFFFFF">TypeScript, JavaScript, Rust</font></sub>
 <sub>@@@@@@@@@@@@@@@@@@@@@@-               .:-=+++===+#%@@@@@%#*+++==-.      -%@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Languages.Computer</font>....... <font color="#FFFFFF">HTML, CSS, JSON, YAML</font></sub>
@@ -32,5 +32,3 @@
 <sub>@@@@@@@@@%*=-:.               .*#=##.       *%@@@%%#*-                                             .</sub>
 <sub>@@@@@@@%=.                   .#@%#%*        %@%@@@@*.                                              .</sub>
 </pre>
-
-<td width="50%" valign="top">
