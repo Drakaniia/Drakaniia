@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ascii-art"
+version = "1.0.0"
+description = "Convert images to ASCII art and render it in markdown (e.g. GitHub profile READMEs)"
+readme = "src/ascii_art/README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "Pillow>=9.0",
+]
+
+[project.optional-dependencies]
+# ascii_magic gives smoother gradients; the pure-Pillow fallback works without it.
+magic = [
+    "ascii-magic>=2.0",
+]
+
+[project.scripts]
+ascii-art = "ascii_art.cli:main"
+ascii-art-gui = "ascii_art.gui:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+packages = ["ascii_art"]
