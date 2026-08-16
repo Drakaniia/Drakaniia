@@ -5,8 +5,8 @@
 I'm Alistair, an AI/Software Engineer 🤖
 
 - 🔭 Currently working on [holy grail](https://holy-grail-eta.vercel.app/).
-- 💬 Ask me about TypeScript, JavaScript, Rust, and everything AI.
-- ❤️ Love for coding and learning new technologies.
+- 💬 Ask me about AI workflows, CI/CD, and everything AI.
+- ❤️ Love for building scalable software with AI.
 - 🚀 Check out my portfolio at [alistair.com](https://alistair-web.vercel.app/).
 
 #### 🛠️ Languages and Tools
