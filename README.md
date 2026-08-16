@@ -1,34 +1,27 @@
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=15F739&random=false&width=435&lines=Hello+world!;Welcome+to+Drakaniia's+profile)](https://git.io/typing-svg)
 
-<pre>
-<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Drakaniia -———————————————————————————————————</sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%##*##%@@%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">OS</font>....................... <font color="#FFFFFF">Windows 10, macOS, Arch Linux</font></sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%#+-.::.     .:-=-.-=-=#%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Uptime</font>................... <font color="#FFFFFF">9 months (since Nov 2025)</font></sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%**+=-..                       ..-*###%@@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Host</font>..................... <font color="#FFFFFF">BukSU (BSIT, Yr 3)</font></sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@#-                                    :==#@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Kernel</font>................... <font color="#FFFFFF">AI, Design & Software Engineer</font></sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@@@%#=:                                       ..:#%@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">IDE</font>...................... <font color="#FFFFFF">IntelliJ IDEA, VS Code</font></sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@@+:                   ..:-------=++=-:          .-%@@@@@@@@@@@@@@@@@@@@@@@   .</sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@#                  .:=#%%@@@@@@@@@@@%%#*=-.      .*%@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Languages.Programming</font>.... <font color="#FFFFFF">TypeScript, JavaScript, Rust</font></sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@-               .:-=+++===+#%@@@@@%#*+++==-.      -%@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Languages.Computer</font>....... <font color="#FFFFFF">HTML, CSS, JSON, YAML</font></sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@%.              .-===+*+===**#%@@@%###**+==+*=.    =@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Languages.Real</font>........... <font color="#FFFFFF">English, Bisaya</font>  </sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@%.            .:=+-..=#*==**#*#%%@%%####-:::=%#   -@@@@@@@@@@@@@@@@@@@@@@@@   . </sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@#:         .:-=*###%%%@@@@%#***%@@@%%%@@%%%#%%-  #@@@@@@@@@@@@@@@@@@@@@@@@   - Contact -———————————————————————————————————</sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@@%.        +%+-=*%%@@@@@@@%=**=*#%#+%%@@@@@@@@*.+@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Email</font>..................... <font color="#FFFFFF">alistairybaez574@gmail.com</font></sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@@@#=+=..   +%%+:-+*%%@@@@%%*##*#%%###%@@@@@@@@##@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Phone</font>..................... <font color="#FFFFFF">+63 962 394 1624</font></sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@%#-=.  .*%%+:-=+*##%####**########%%%%@@@%%%@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">LinkedIN</font>.................. <font color="#FFFFFF">alistair-ybañez-0b50212b2</font></sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@#=:--. -%%+::-=++**++=-=+***#*+=+*#%@@%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">GitHub</font>.................... <font color="#FFFFFF">Drakaniia</font></sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%#+:  -*%%*-::--=*******#**#*#####%@@%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Threads</font>................... <font color="#FFFFFF">@washme.wepp</font></sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%*-.+-:+*-....-+*##%@@@@@@@%%%%%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#FFAA00">Facebook</font>.................. <font color="#FFFFFF">alii.2306</font></sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%#-  =-...   .-=+**##*****###%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   .</sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*                ......:+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   - GitHub Stats -———————————————————————————————————</sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%-        .:::::::::-=**#%@@#+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#00FF88">Repos</font>..................... <font color="#FFFFFF">15</font></sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*-+-.:. ...:=******#%%%@@@@@*:  :+#%@@@@@@@@@@@@@@@@@@@@@@@@   . <font color="#00FF88">Contributed</font>............... <font color="#FFFFFF">4</font></sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%-.:---::-==+**#%%@@@@@@@%*:       .-+*#%%@@@@@@@@@@@@@@@@@@   . <font color="#00E5FF">Stars</font>..................... <font color="#FFFFFF">52</font></sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%*=%@@#+=+*+-=+#%%@@@@@@@@@%*:               .::-=+*#%%@@@@@@@@@   . <font color="#00FF88">Commits</font>................... <font color="#FFFFFF">3,458</font></sub>
-<sub>@@@@@@@@@@@@@@@@@@@@@@@@@@@%#*+=. -@@%#+=---:+#@@@@@@@@@@%+.                          ..:-==+*#%   . <font color="#FFAA00">Followers</font>................. <font color="#FFFFFF">29</font></sub>
-<sub>@@@@@@@@@@@@@@@@@@@@%%#*+-:.      *%*.         .=#%@@@@@*:                                         . <font color="#00FF88">Top Languages</font>............. <font color="#FFFFFF">TypeScript 53%, HTML 11%, CSS 10%</font></sub>
-<sub>@@@@@@@@@@@@@@%%#+=-.           ..#+         .:-:.-+%@#:                                           . <font color="#00FF88">Contributions (12mo)</font>...... <font color="#FFFFFF">6,918</font></sub>
-<sub>@@@@@@@@@%*=-:.               .*#=##.       *%@@@%%#*-                                             .</sub>
-<sub>@@@@@@@%=.                   .#@%#%*        %@%@@@@*.                                              .</sub>
-</pre>
+#### 👋 Hi there
+
+I'm Alistair, an AI/Software Engineer 🤖
+
+- 🔭 Currently working on [holy grail](https://holy-grail-eta.vercel.app/).
+- 💬 Ask me about TypeScript, JavaScript, Rust, and everything AI.
+- ❤️ Love for coding and learning new technologies.
+- 🚀 Check out my portfolio at [alistair.com](https://alistair-web.vercel.app/).
+
+#### 🛠️ Languages and Tools
+
+<p>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/>
+  <img src="https://cdn.simpleicons.org/rust/CE422B" alt="rust" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/svelte/svelte-original.svg" alt="svelte" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg" alt="vue" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/githubactions/githubactions-original.svg" alt="github-actions" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/googlecloud/googlecloud-original.svg" alt="gcp" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg" alt="terraform" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tauri/tauri-original.svg" alt="tauri" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg" alt="flutter" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="docker" width="40" height="40"/>
+</p>
