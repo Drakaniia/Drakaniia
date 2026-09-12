@@ -1,16 +1,5 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=15F739&random=false&width=435&lines=Hello+world!;Welcome+to+Drakaniia's+profile)](https://git.io/typing-svg)
+<img src="images/main.png">
 
-#### 👋 Hi there
-
-I'm Alistair, an AI/Software Engineer 🤖
-
-- 🔭 Currently working on [holy grail](https://holy-grail-eta.vercel.app/).
-- 💬 Ask me about AI workflows, CI/CD, and everything AI.
-- 🤗 Open source contributor.
-- ❤️ Love for building scalable software with AI.
-- 🔗 Check out my portfolio at [alistair.com](https://alistair-web.vercel.app/).
-
-#### 🛠️ Languages and Tools
 
 <p>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/>
