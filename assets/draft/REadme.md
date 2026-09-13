@@ -5,3 +5,7 @@ I'm Alistair, an AI/Software Engineer 🤖
 - 🤗 Open source contributor.
 - ❤️ Love for building scalable software with AI.
 - 🔗 Check out my portfolio at [alistair.com](https://alistair-web.vercel.app/).
+
+
+
+add swift, C++, C#,  Angular, Kotlin, Microsoft Azure, Hugging Fce, Google Cloud, Obsidian, cloudflare
